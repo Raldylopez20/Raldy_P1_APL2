@@ -15,17 +15,22 @@ namespace Raldy_P1_APL2.Models
         [Range(0, 100, ErrorMessage = "El campo 'ProductoId' no puede ser 0 o (mayor a 1000).")]
         public int ProductoId { get; set; }
 
+
+        //Descripcion
         [Required(ErrorMessage = "No debe de estar Vacío el campo 'Decripcion'")]
         [MinLength(4, ErrorMessage = "El Campo 'Descripcion' debe tener por lo menos (4 caracteres).")]
         [RegularExpression(@"\S(.*)\S", ErrorMessage = "Debe ser un texto.")]
         public string Descripcion { get; set; }
 
+        //Existencia
         [Required(ErrorMessage = "No debe de estar Vacío el campo 'Existencia'")]
         public decimal Existencia { get; set; }
 
+        //Costo
         [Required(ErrorMessage = "No debe de estar Vacío el campo 'Costo'")]
         public decimal Costo { get; set; }
 
+        //Valor inventario
         [Required(ErrorMessage = "No debe de estar Vacío el campo 'ValorInventario'")]
         public decimal ValorInventario { get; set; }
 
