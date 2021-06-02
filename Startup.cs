@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 
 using Blazored.Toast;
 
+
 namespace Raldy_P1_APL2
 {
     public class Startup
