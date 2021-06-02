@@ -10,6 +10,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+using Blazored.Toast;
+
 namespace Raldy_P1_APL2
 {
     public class Startup
@@ -27,6 +29,7 @@ namespace Raldy_P1_APL2
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
+            services.AddBlazoredToast();
             services.AddSingleton<WeatherForecastService>();
         }
 
